@@ -21,6 +21,16 @@ const Navbar = () => {
                 <LuCalendarClock className='text-lg lg:hidden' /> Projects
             </CustomLink>
         </li>
+        <li>
+            <CustomLink to='/skills'>
+                <LuCalendarClock className='text-lg lg:hidden' /> Skills
+            </CustomLink>
+        </li>
+        <li>
+            <CustomLink to='/skills'>
+                <LuCalendarClock className='text-lg lg:hidden' /> Contact Us
+            </CustomLink>
+        </li>
     </>
 
     return (
