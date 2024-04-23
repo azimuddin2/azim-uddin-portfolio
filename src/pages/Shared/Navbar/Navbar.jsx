@@ -35,14 +35,14 @@ const Navbar = () => {
 
     return (
         <div className='text-secondary py-1 px-2 lg:px-0'>
-            <div className="navbar container mx-auto max-w-screen-lg">
+            <div className="navbar container mx-auto max-w-screen-xl">
                 <div className="navbar-start">
                     <Link to="/">
                         <h2 className='text-primary text-lg font-medium'>MD. AZIMUDDIN</h2>
                         {/* <img className='w-full' style={{ height: "40px" }} src={logo} alt="Logo" /> */}
                     </Link>
                 </div>
-                <div className="navbar-center hidden lg:flex items-center">
+                <div className="navbar-end hidden lg:flex items-center">
                     <ul className="flex items-center menu menu-horizontal p-0 text-white">
                         {navOptions}
                     </ul>

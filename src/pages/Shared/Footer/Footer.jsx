@@ -8,12 +8,12 @@ const Footer = () => {
             style={{ background: 'var(--Dark-07, #F3F3F3)' }}
             className="pt-20 px-6 lg:px-0"
         >
-            <div className='footer max-w-screen-lg lg:mx-auto pb-8 border-b'>
+            <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b'>
                 <div>
                     {/* <img src={logo} alt="Logo" style={{ height: "44px" }} /> */}
                     <p className='my-3 text-accent text-sm'>Edwin Diaz is a software and web <br /> technologies engineer, a life coach <br /> trainer who is also a serial.</p>
-                    <Link to="/appointment" className='group'>
-                        <button className='btn btn-outline btn-secondary group-hover:text-white capitalize'>Appointment</button>
+                    <Link to="/projects" className='group'>
+                        <button className='btn btn-outline btn-primary group-hover:text-white capitalize'>Projects</button>
                     </Link>
                     <div className='flex items-center mt-5'>
                         <p className='text-primary text-2xl mr-2 cursor-pointer'><FaGoogle></FaGoogle></p>
@@ -61,7 +61,7 @@ const Footer = () => {
                 width="18"
                 height="18"
                 top="400"
-                style={{ background: "#F7A582", boxShadow: 'none', borderRadius: "5px" }}
+                style={{ background: "#14a800", boxShadow: 'none', borderRadius: "5px" }}
             />
         </footer>
     );

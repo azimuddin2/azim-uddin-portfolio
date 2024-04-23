@@ -7,12 +7,12 @@ const CustomLink = ({ children, to, ...props }) => {
     return (
         <Link className='mb-1 lg:mb-0'
             style={{
-                // background: match ? '#F7A582' : 'none',
-                fontWeight: match ? '700' : '500',
-                borderRadius: '2px',
+                background: match ? '#14a800' : 'none',
+                fontWeight: match ? '600' : '500',
+                borderRadius: '4px',
                 marginRight: '4px',
-                color: match ? '#14a800' : 'black',
-                borderBottom: match ? '3px solid #14a800': 'none',
+                color: match ? 'white' : 'black',
+                // borderBottom: match ? '3px solid #14a800': 'none',
                 fontSize: '15px'
             }}
             to={to}
