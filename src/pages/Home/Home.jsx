@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import Projects from "./Projects/Projects";
 import Services from "./Services/Services";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div className="max-w-screen-xl mx-auto">
             <Banner></Banner>
             <Services></Services>
+            <Projects></Projects>
         </div>
     );
 };

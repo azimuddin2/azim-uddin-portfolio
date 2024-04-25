@@ -15,7 +15,7 @@ const Banner = () => {
                         <TypeAnimation
                             className="text-2xl lg:text-4xl font-semibold text-primary"
                             sequence={[
-                                'Full Stack Web Developer',
+                                'Full Stack Developer',
                                 1000,
                                 'MERN Stack Developer',
                                 1000,

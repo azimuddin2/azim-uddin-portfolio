@@ -27,7 +27,12 @@ const Services = () => {
 
     return (
         <section className="my-10">
-            <h1 className="text-2xl text-primary font-medium text-center">My Services</h1>
+
+            <div className="text-center">
+                <h2 className="text-xl text-primary font-medium">My Services</h2>
+                <h1 className="text-3xl font-medium">Provide Awesome Services</h1>
+            </div>
+
             <div className="mt-6">
                 <Swiper
                     style={{
@@ -52,7 +57,7 @@ const Services = () => {
                             slidesPerView: 3,
                         },
                     }}
-                    spaceBetween={14}
+                    spaceBetween={20}
                     modules={[A11y, Pagination, Navigation, Autoplay]}
                     autoplay={{
                         delay: 2500,
