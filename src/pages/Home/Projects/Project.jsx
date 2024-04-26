@@ -10,7 +10,7 @@ const Project = ({ project }) => {
 
     return (
         <div className="card shadow my-20">
-            <figure className="px-10 pt-10">
+            <figure className="px-5 pt-5">
                 <img src={image} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body">

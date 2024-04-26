@@ -26,14 +26,14 @@ const Services = () => {
     }
 
     return (
-        <section className="my-20">
+        <section className="my-12">
 
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Services</h2>
                 <h1 className="text-2xl lg:text-3xl font-medium">Provide Awesome Services</h1>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-8">
                 <Swiper
                     style={{
                         "--swiper-pagination-color": "#14a800",

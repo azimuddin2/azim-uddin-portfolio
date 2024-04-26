@@ -9,7 +9,7 @@ const Service = ({ service }) => {
     };
 
     return (
-        <div className="card border mb-14">
+        <div className="card border mb-14 hover:border-primary cursor-pointer">
             <figure className="px-10 pt-10 w-40 mx-auto">
                 <img src={image} alt="Shoes" className="w-full" />
             </figure>
