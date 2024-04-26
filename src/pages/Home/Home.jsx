@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <div className="max-w-screen-xl mx-auto">
             <Banner></Banner>
-            {/* <Services></Services> */}
-            {/* <Projects></Projects> */}
+            <Services></Services>
+            <Projects></Projects>
             {/* <Skills></Skills> */}
             {/* <ContactUs></ContactUs> */}
         </div>
