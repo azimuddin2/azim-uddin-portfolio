@@ -4,13 +4,13 @@ import azimImg from '../../../assets/images/azim_uddin.jpeg';
 const Banner = () => {
     return (
         <section>
-            <div className="hero min-h-screen">
+            <div className=" min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className='flex-1 mx-auto'>
                         <img style={{ border: '3px solid #14a800' }} src={azimImg} alt='azim uddin' className="lg:max-w-sm rounded-xl mx-auto" />
                     </div>
                     <div className='flex-1'>
-                        <h1 className="text-5xl font-semibold mb-5">Hi! I'm Azim Uddin.</h1>
+                        <h1 className="text-5xl text-secondary font-semibold mb-5">Hi! I'm Azim Uddin.</h1>
 
                         <TypeAnimation
                             className="text-2xl lg:text-4xl font-semibold text-primary"
@@ -28,7 +28,7 @@ const Banner = () => {
                             repeat={Infinity}
                         />
 
-                        <p className="py-6">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technical Skills:- HTML, CSS,  SCSS, Bootstrap, Tailwind CSS,  Javascript, ES6, React.js, Firebase, Node.js, Express.js, MongoDB Etc.</p>
+                        <p className="py-6 text-accent text-base w-11/12">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technical Skills:- HTML, CSS, SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6, React.js, React Router, Firebase, Node.js, Express.js, MongoDB Etc.</p>
                         <button className="btn btn-primary text-white">Get Started</button>
                     </div>
                 </div>

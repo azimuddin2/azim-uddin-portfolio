@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import CustomLink from './CustomLink';
 import { IoHomeOutline } from 'react-icons/io5';
-import { LuCalendarClock } from 'react-icons/lu';
+import { LuContact } from 'react-icons/lu';
+import { MdOutlineDesignServices } from 'react-icons/md';
+import { GoTasklist } from 'react-icons/go';
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
 const Navbar = () => {
 
@@ -13,33 +16,32 @@ const Navbar = () => {
         </li>
         <li>
             <CustomLink to='/services'>
-                <IoHomeOutline className='text-lg lg:hidden' /> Services
+                <MdOutlineDesignServices className='text-lg lg:hidden' /> Services
             </CustomLink>
         </li>
         <li>
             <CustomLink to='/projects'>
-                <LuCalendarClock className='text-lg lg:hidden' /> Projects
+                <AiOutlineFundProjectionScreen className='text-lg lg:hidden' /> Projects
             </CustomLink>
         </li>
         <li>
             <CustomLink to='/skills'>
-                <LuCalendarClock className='text-lg lg:hidden' /> Skills
+                <GoTasklist className='text-lg lg:hidden' /> Skills
             </CustomLink>
         </li>
         <li>
-            <CustomLink to='/skills'>
-                <LuCalendarClock className='text-lg lg:hidden' /> Contact Us
+            <CustomLink to='/contact'>
+                <LuContact className='text-lg lg:hidden' /> Contact Us
             </CustomLink>
         </li>
     </>
 
     return (
-        <div className='text-secondary py-1 px-2 lg:px-0'>
+        <div className='bg-white text-secondary py-1 px-2 lg:px-0'>
             <div className="navbar container mx-auto max-w-screen-xl">
                 <div className="navbar-start">
                     <Link to="/">
-                        <h2 className='text-primary text-lg font-medium'>MD. AZIMUDDIN</h2>
-                        {/* <img className='w-full' style={{ height: "40px" }} src={logo} alt="Logo" /> */}
+                        <h2 className='text-primary text-lg font-medium'>MD. AZIM UDDIN</h2>
                     </Link>
                 </div>
                 <div className="navbar-end hidden lg:flex items-center">
@@ -49,12 +51,12 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end lg:hidden">
                     <div className="dropdown">
-                        <label htmlFor='' tabIndex="0" className="btn btn-ghost lg:hidden">
+                        <label htmlFor='' tabIndex="0" className="btn btn-secondary btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul
                             tabIndex="0"
-                            className="menu menu-compact dropdown-content mt-3 p-5 shadow  w-60 right-6 responsive-navbar"
+                            className="menu menu-compact dropdown-content mt-3 p-5 shadow w-72 right-6 bg-white rounded-xl"
                         >
                             {navOptions}
                         </ul>
