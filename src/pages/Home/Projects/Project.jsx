@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FiExternalLink } from "react-icons/fi";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const Project = ({ project }) => {
     const { image, name, description } = project;
@@ -9,7 +11,7 @@ const Project = ({ project }) => {
     };
 
     return (
-        <div className="card shadow my-20">
+        <div className="card shadow my-16 m-1 lg:mx-0">
             <figure className="px-5 pt-5">
                 <img src={image} alt="Shoes" className="rounded-xl" />
             </figure>
@@ -20,12 +22,28 @@ const Project = ({ project }) => {
                     <p onClick={toggleReadMore} className='inline'>
                         {
                             isReadMore ?
-                                <span className='link font-semibold text-primary'>more</span>
+                                <span className='link font-semibold text-primary'>more?</span>
                                 :
                                 <span className='link font-semibold text-primary'>less</span>
                         }
                     </p>
                 </div>
+
+                <div className="card-actions flex justify-center items-center mt-2">
+                    <button
+                        className="btn btn-primary btn-sm rounded text-white"
+                    >
+                        Live Preview
+                        <FiExternalLink className='text-base' />
+                    </button>
+                    <button
+                        className="btn btn-outline btn-primary btn-sm rounded hover:text-white"
+                    >
+                        <span className="hover:text-white">Project Details</span>
+                        <IoArrowForwardCircleOutline className="text-lg -ms-1"/>
+                    </button>
+                </div>
+
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <section>
             <div className="my-5 lg:my-12">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content p-0 flex-col lg:flex-row-reverse">
 
                     <div className='flex-1 mx-auto'>
                         <img style={{ border: '3px solid #14a800' }} src={azimImg} alt='azim uddin' className="w-4/5 lg:w-3/5 rounded-xl mx-auto" />

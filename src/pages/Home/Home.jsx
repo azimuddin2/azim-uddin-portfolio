@@ -7,7 +7,7 @@ import Skills from "./Skills/Skills";
 
 const Home = () => {
     return (
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl lg:mx-auto mx-5">
             <Banner></Banner>
             <Services></Services>
             <Projects></Projects>
