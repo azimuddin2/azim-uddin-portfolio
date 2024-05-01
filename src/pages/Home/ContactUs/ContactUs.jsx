@@ -31,13 +31,10 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <div className=" flex-1 border p-10 rounded-lg">
+                <div className="flex-1 shadow p-10 rounded-lg">
                     <form>
 
                         <div className="form-control mb-3">
-                            {/* <label className="label">
-                            <span className="label-text font-semibold">Name*</span>
-                        </label> */}
                             <input
                                 name='name'
                                 type="text"
@@ -48,9 +45,6 @@ const ContactUs = () => {
                         </div>
 
                         <div className="form-control mb-3">
-                            {/* <label className="label">
-                            <span className="label-text font-semibold">Name*</span>
-                        </label> */}
                             <input
                                 name='name'
                                 type="text"
@@ -71,9 +65,6 @@ const ContactUs = () => {
                         </div>
 
                         <div className="form-control">
-                            {/* <label className="label">
-                            <span className="label-text font-semibold">Message*</span>
-                        </label> */}
                             <textarea
                                 name='message'
                                 rows='5'
@@ -83,7 +74,7 @@ const ContactUs = () => {
                             ></textarea>
                         </div>
 
-                        <button className=" btn btn-primary text-white w-full mt-5">Send Message</button>
+                        <button className="btn btn-primary text-white w-full mt-5">Send Message</button>
 
                     </form>
                 </div>

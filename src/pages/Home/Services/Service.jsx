@@ -22,7 +22,7 @@ const Service = ({ service }) => {
                             isReadMore ?
                                 <span className='link font-semibold text-primary'>more</span>
                                 :
-                                <span className='link font-semibold text-primary'>less</span>
+                                <span className='link font-semibold text-primary ms-1'>less</span>
                         }
                     </p>
                 </div>

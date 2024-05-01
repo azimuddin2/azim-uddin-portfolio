@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.preview-btn:hover{
+    color: white !important;
+}
+
 /* responsive tablet device */
 @media screen and (min-width: 577px) and (max-width: 991px) {
     .swiper-button-prev {
