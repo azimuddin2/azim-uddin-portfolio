@@ -9,14 +9,14 @@ const Service = ({ service }) => {
     };
 
     return (
-        <div className="card border mb-14 hover:border-primary cursor-pointer">
+        <div className="card border mb-14 hover:border-primary cursor-pointer lg:ml-1">
             <figure className="px-10 pt-10 w-40 mx-auto">
                 <img src={image} alt="Shoes" className="w-full" />
             </figure>
-            <div className="card-body items-center text-center">
+            <div className="card-body p-5 lg:p-8 pb-10 items-center text-center">
                 <h2 className="card-title text-secondary">{name}</h2>
                 <div className='text-accent'>
-                    {isReadMore ? description.slice(0, 100) + '...' : description}
+                    {isReadMore ? description.slice(0, 110) + '...' : description}
                     <p onClick={toggleReadMore} className='inline'>
                         {
                             isReadMore ?

@@ -10,10 +10,10 @@ const Home = () => {
         <div className="max-w-screen-xl lg:mx-auto mx-5">
             <Banner></Banner>
             <Services></Services>
-            <Projects></Projects>
-            <Skills></Skills>
-            <Certificate></Certificate>
-            <ContactUs></ContactUs>
+            {/* <Projects></Projects> */}
+            {/* <Skills></Skills> */}
+            {/* <Certificate></Certificate> */}
+            {/* <ContactUs></ContactUs> */}
         </div>
     );
 };

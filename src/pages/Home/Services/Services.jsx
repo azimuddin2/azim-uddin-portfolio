@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Service from "./Service";
+import ErrorMessage from "../../../components/ErrorMessage/ErrorMessage";
+import Loading from "../../../components/Loading/Loading";
 
 const Services = () => {
 
@@ -18,22 +20,20 @@ const Services = () => {
     })
 
     if (isLoading) {
-        return <p>Loading...</p>
+        return <Loading></Loading>
     }
 
     if (error) {
-        return <p>{error.message}</p>
+        return <ErrorMessage message={error.message}></ErrorMessage>
     }
 
     return (
         <section className="my-12">
-
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Services</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium">Provide Awesome Services</h1>
+                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Provide Awesome Services</h1>
             </div>
-
-            <div className="mt-8">
+            <div className="mt-5 lg:mt-8">
                 <Swiper
                     style={{
                         "--swiper-pagination-color": "#14a800",
@@ -57,7 +57,7 @@ const Services = () => {
                             slidesPerView: 3,
                         },
                     }}
-                    spaceBetween={20}
+                    spaceBetween={12}
                     modules={[A11y, Pagination, Navigation, Autoplay]}
                     autoplay={{
                         delay: 2500,
