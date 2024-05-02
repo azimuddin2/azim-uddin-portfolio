@@ -8,12 +8,12 @@ import { Slide } from 'react-awesome-reveal';
 
 const Certificate = () => {
     return (
-        <section className='my-14'>
+        <section className='my-8 lg:my-12'>
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Certificate</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium">Certificate Of Achievement</h1>
+                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Certificate Of Achievement</h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-8'>
                 <Slide direction='down'>
                     <Link target={"_blank"} to="https://drive.google.com/file/d/1WIl8nPiFzrquIXAbsvoFtgaoTTV38Twx/view?usp=sharing" className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative">
                         <figure>
