@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const Project = ({ project }) => {
+const Project = ({ project, setProjectModal }) => {
     const { image, name, description, link } = project;
     const [isReadMore, setIsReadMore] = useState(true);
 
@@ -41,13 +41,15 @@ const Project = ({ project }) => {
                         </button>
                     </Link>
 
-                    <button
+                    <label
+                        onClick={() => setProjectModal(project)}
+                        htmlFor="project-details-modal"
                         className="btn btn-outline btn-primary btn-sm rounded preview-btn"
                     >
                         <span>Project Details</span>
                         <IoArrowForwardCircleOutline className="text-lg -ms-1" />
-                    </button>
-                    
+                    </label>
+
                 </div>
 
             </div>

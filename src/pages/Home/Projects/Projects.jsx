@@ -12,8 +12,11 @@ import "swiper/css/navigation";
 import { A11y, Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import Project from "./Project";
 import './Projects.css';
+import { useState } from "react";
+import ProjectDetailsModal from "../../../components/ProjectDetailsModal/ProjectDetailsModal";
 
 const Projects = () => {
+    const [projectModal, setProjectModal] = useState(null);
 
     const { isLoading, error, data: projects = [] } = useQuery({
         queryKey: ['projects'],
@@ -23,6 +26,10 @@ const Projects = () => {
             return data;
         }
     })
+
+    const closeModal = () => {
+        setProjectModal(null);
+    };
 
     if (isLoading) {
         return <p>Loading...</p>
@@ -90,11 +97,21 @@ const Projects = () => {
                 >
                     {
                         projects.map(project => <SwiperSlide key={project._id}>
-                            <Project project={project}></Project>
+                            <Project
+                                project={project}
+                                setProjectModal={setProjectModal}
+                            ></Project>
                         </SwiperSlide>)
                     }
                 </Swiper>
             </div>
+
+            {
+                projectModal && <ProjectDetailsModal
+                    projectDetails={projectModal}
+                    closeModal={closeModal}
+                ></ProjectDetailsModal>
+            }
 
         </section>
     );
