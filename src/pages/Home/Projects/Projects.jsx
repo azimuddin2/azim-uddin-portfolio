@@ -9,8 +9,8 @@ import Project from "./Project";
 import { useState } from "react";
 import ProjectDetailsModal from "../../../components/ProjectDetailsModal/ProjectDetailsModal";
 import './Projects.css';
-import Loading from "../../../components/Loading/Loading";
-import ErrorMessage from "../../../components/ErrorMessage/ErrorMessage";
+import Loading from "../../Shared/Loading/Loading";
+import ErrorMessage from "../../Shared/ErrorMessage/ErrorMessage";
 
 const Projects = () => {
     const [projectModal, setProjectModal] = useState(null);
@@ -67,10 +67,10 @@ const Projects = () => {
                         slideShadows: false,
                     }}
                     modules={[EffectCoverflow, Pagination, Navigation, Autoplay, A11y]}
-                    // autoplay={{
-                    //     delay: 2500,
-                    //     disableOnInteraction: false,
-                    // }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     pagination={{ clickable: true }}
                     navigation={true}
                     className="mySwiper"

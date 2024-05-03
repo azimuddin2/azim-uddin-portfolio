@@ -5,8 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Service from "./Service";
-import ErrorMessage from "../../../components/ErrorMessage/ErrorMessage";
-import Loading from "../../../components/Loading/Loading";
+import ErrorMessage from "../../Shared/ErrorMessage/ErrorMessage";
+import Loading from "../../Shared/Loading/Loading";
 
 const Services = () => {
 
