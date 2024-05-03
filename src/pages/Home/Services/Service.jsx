@@ -11,7 +11,7 @@ const Service = ({ service }) => {
     return (
         <div className="card border mb-14 hover:border-primary cursor-pointer lg:ml-1">
             <figure className="px-10 pt-10 w-40 mx-auto">
-                <img src={image} alt="Shoes" className="w-full" />
+                <img src={image} alt={name} className="w-full" />
             </figure>
             <div className="card-body p-5 lg:p-8 pb-10 items-center text-center">
                 <h2 className="card-title text-secondary">{name}</h2>
