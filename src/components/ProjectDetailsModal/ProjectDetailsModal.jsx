@@ -21,12 +21,8 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
                             ✕
                         </label>
                     </form>
-
-
-                    <div className="">
-
-                        <h1 className=" text-2xl text-secondary font-semibold mb-2">{name}</h1>
-
+                    <div>
+                        <h1 className="text-2xl text-secondary font-semibold mb-2">{name}</h1>
                         <Carousel autoPlay infiniteLoop>
                             {
                                 images?.map((image, index) => <div key={index} image={image}>
@@ -34,11 +30,7 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
                                 </div>)
                             }
                         </Carousel>
-
-
                         <p className="text-accent mb-6">{description}</p>
-
-
                         <h2 className="text-xl text-secondary font-medium mb-2">Technology Skills</h2>
                         <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 w-11/12 lg:w-4/5 mx-auto">
                             {skills?.map((skill, index) => <span
@@ -49,7 +41,6 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
                                 {skill}
                             </span>)}
                         </div>
-
                         <Link
                             to={link}
                             target={"_blank"}
@@ -58,11 +49,7 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
                             <span>{link}</span>
                             <FiExternalLink className='text-base' />
                         </Link>
-
-
                     </div>
-
-
                 </div>
             </dialog>
         </div>

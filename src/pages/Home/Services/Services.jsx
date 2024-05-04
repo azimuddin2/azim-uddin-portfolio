@@ -28,7 +28,7 @@ const Services = () => {
     }
 
     return (
-        <section className="my-12">
+        <section className="my-12 mb-6 lg:mb-0">
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Services</h2>
                 <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Provide Awesome Services</h1>

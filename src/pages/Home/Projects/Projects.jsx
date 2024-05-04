@@ -1,19 +1,16 @@
 import { useQuery } from "@tanstack/react-query";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+import { A11y, Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import "swiper/css/navigation";
-
-
-// import required modules
-import { A11y, Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import Project from "./Project";
-import './Projects.css';
 import { useState } from "react";
 import ProjectDetailsModal from "../../../components/ProjectDetailsModal/ProjectDetailsModal";
+import './Projects.css';
+import Loading from "../../../components/Loading/Loading";
+import ErrorMessage from "../../../components/ErrorMessage/ErrorMessage";
 
 const Projects = () => {
     const [projectModal, setProjectModal] = useState(null);
@@ -32,21 +29,19 @@ const Projects = () => {
     };
 
     if (isLoading) {
-        return <p>Loading...</p>
+        return <Loading></Loading>
     }
 
     if (error) {
-        return <p>{error.message}</p>
+        return <ErrorMessage message={error.message}></ErrorMessage>
     }
 
     return (
-        <section className="my-12">
-
+        <section className="my-6 lg:my-12">
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Projects</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium">Here Are Some Recent Works</h1>
+                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Here Are Some Recent Works</h1>
             </div>
-
             <div>
                 <Swiper
                     style={{
@@ -72,10 +67,10 @@ const Projects = () => {
                         slideShadows: false,
                     }}
                     modules={[EffectCoverflow, Pagination, Navigation, Autoplay, A11y]}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    // }}
                     pagination={{ clickable: true }}
                     navigation={true}
                     className="mySwiper"
@@ -105,14 +100,12 @@ const Projects = () => {
                     }
                 </Swiper>
             </div>
-
             {
                 projectModal && <ProjectDetailsModal
                     projectDetails={projectModal}
                     closeModal={closeModal}
                 ></ProjectDetailsModal>
             }
-
         </section>
     );
 };
