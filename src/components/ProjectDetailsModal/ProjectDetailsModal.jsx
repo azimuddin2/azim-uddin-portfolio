@@ -11,12 +11,12 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
         <div>
             <input type="checkbox" id="project-details-modal" className="modal-toggle" />
             <dialog id="project-details-modal" className="modal">
-                <div className="modal-box lg:w-4/5 lg:max-w-5xl">
+                <div className="modal-box lg:w-4/5 lg:max-w-5xl bg-success">
                     <form method="dialog">
                         <label
                             onClick={closeModal}
                             htmlFor="project-details-modal"
-                            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                            className="btn btn-sm btn-circle btn-ghost text-secondary absolute right-2 top-2"
                         >
                             ✕
                         </label>

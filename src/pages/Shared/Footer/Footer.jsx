@@ -1,37 +1,66 @@
-import { FaGoogle, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaFacebookF } from 'react-icons/fa';
+import { SiUpwork } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 
 const Footer = () => {
     return (
-        <footer
-            style={{ background: 'var(--Dark-07, #F3F3F3)' }}
-            className="pt-20 px-6 lg:px-0 mt-12 lg:mt-16"
-        >
+        <footer className="pt-20 px-6 lg:px-0 mt-12 lg:mt-16 bg-warning">
             <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b'>
                 <div>
                     <h2 className='text-primary font-semibold text-lg'>AU Software Agency</h2>
-
                     <p className='my-3 text-accent text-sm'>Hello Guys! I am a Full Stack web <br /> developer. I have 4+ years of <br /> experience in web programming.</p>
                     <Link to="/projects" className='group'>
                         <button className='btn btn-outline btn-primary group-hover:text-white capitalize'>All Projects</button>
                     </Link>
-                    <div className='flex items-center mt-5'>
-                        <p className='text-primary text-2xl mr-2 cursor-pointer'><FaGoogle></FaGoogle></p>
-                        <p className='text-primary text-2xl mr-2 cursor-pointer'><FaTwitter></FaTwitter></p>
-                        <p className='text-primary text-2xl mr-2 cursor-pointer'><FaInstagram></FaInstagram></p>
-                        <p className='text-primary text-2xl cursor-pointer'><FaLinkedin></FaLinkedin></p>
-                    </div>
+                    <ul className='flex items-center mt-5'>
+                        <li>
+                            <Link
+                                target={"_blank"}
+                                to={'https://www.facebook.com/au.pranto.5'}
+                                className='btn btn-circle btn-outline btn-primary btn-sm rounded mr-2 preview-btn'
+                            >
+                                <FaFacebookF className='text-base' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                target={"_blank"}
+                                to={'https://www.linkedin.com/in/mohammad-azim-uddin-232284241'}
+                                className='btn btn-circle btn-outline btn-primary btn-sm rounded mr-2 preview-btn'
+                            >
+                                <FaLinkedinIn className='text-base' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                target={"_blank"}
+                                to={'https://www.upwork.com/freelancers/~0199b09bb254ec0732'}
+                                className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-2 preview-btn'
+                            >
+                                <SiUpwork className='text-base' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                target={"_blank"}
+                                to={'https://github.com/azimuddin2'}
+                                className='btn btn-outline btn-circle btn-primary btn-sm rounded preview-btn'
+                            >
+                                <FaGithub className='text-base' />
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
                 <div>
-                    <span className=" text-neutral font-bold text-lg mb-2">Quick Links</span>
+                    <span className=" text-secondary font-bold text-lg mb-2">Quick Links</span>
                     <Link to="/services" className="link link-hover text-accent font-medium link-primary">Services</Link>
                     <Link to="/projects" className="link link-hover text-accent font-medium link-primary">Projects</Link>
                     <Link to="/skills" className="link link-hover text-accent font-medium link-primary">Skills</Link>
                     <Link to="/contact" className="link link-hover text-accent font-medium link-primary">Contact Us</Link>
                 </div>
                 <div>
-                    <span className="text-neutral font-bold text-lg mb-2">Software Agency Services</span>
+                    <span className="text-secondary font-bold text-lg mb-2">Software Agency Services</span>
                     <a href="/" className="link link-hover text-accent font-medium">Website Design</a>
                     <a href="/" className="link link-hover text-accent font-medium">Responsive Website</a>
                     <a href="/" className="link link-hover text-accent font-medium">Web Development</a>

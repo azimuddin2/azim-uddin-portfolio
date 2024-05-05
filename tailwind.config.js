@@ -16,7 +16,8 @@ export default {
           accent: "#676767",
           neutral: "#ffffff",
           success: "#ffffff",
-          // warning: "#e5e7eb"
+          warning: "#F3F3F3",
+          info: "#e5e7eb"
         },
       },
       {
@@ -26,7 +27,8 @@ export default {
           accent: "#a6adbb",
           neutral: "#0f172a",
           success: "#172131",
-          // warning: "#f8fafc14"
+          warning: "#0c1324",
+          info: "#374151"
         },
       },
     ],

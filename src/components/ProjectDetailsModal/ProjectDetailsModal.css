@@ -4,8 +4,12 @@
 
 .carousel .thumb.selected,
 .carousel .thumb:hover {
-    border: 3px solid #333 !important;
+    border: 3px solid #14a800 !important;
     border-radius: 5px;
+}
+
+.carousel .thumb {
+    border: none;
 }
 
 .carousel .control-dots .dot {

@@ -11,9 +11,9 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <Projects></Projects>
-            <Skills></Skills>
-            <Certificate></Certificate>
-            <ContactUs></ContactUs>
+            {/* <Skills></Skills> */}
+            {/* <Certificate></Certificate> */}
+            {/* <ContactUs></ContactUs> */}
         </div>
     );
 };

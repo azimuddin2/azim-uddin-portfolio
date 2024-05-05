@@ -7,7 +7,6 @@ import { GoTasklist } from 'react-icons/go';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import { themeChange } from 'theme-change';
-import { CiDark } from 'react-icons/ci';
 
 const Navbar = () => {
     const [theme, setTheme] = useState("light");
@@ -53,22 +52,6 @@ const Navbar = () => {
                 <LuContact className='text-lg lg:hidden' /> Contact Us
             </CustomLink>
         </li>
-
-
-
-        <li>
-            <label className="swap swap-rotate">
-                <input
-                    type="checkbox"
-                    onChange={handleToggle}
-                    checked={theme === 'light' ? false : true}
-                />
-                <MdOutlineLightMode className="swap-on w-8 h-8 text-[#ffec99]" />
-                <MdOutlineDarkMode className="swap-off w-8 h-8 text-secondary" />
-            </label>
-        </li>
-
-
     </>
 
     return (
@@ -83,15 +66,33 @@ const Navbar = () => {
                     <ul className="flex items-center menu menu-horizontal p-0">
                         {navOptions}
                     </ul>
+                    <label className="swap swap-rotate ms-3">
+                        <input
+                            type="checkbox"
+                            onChange={handleToggle}
+                            checked={theme === 'light' ? false : true}
+                        />
+                        <MdOutlineLightMode className="swap-on w-6 h-6 text-[#ffec99]" />
+                        <MdOutlineDarkMode className="swap-off w-6 h-6 text-secondary" />
+                    </label>
                 </div>
                 <div className="navbar-end lg:hidden">
+                    <label className="swap swap-rotate me-1">
+                        <input
+                            type="checkbox"
+                            onChange={handleToggle}
+                            checked={theme === 'light' ? false : true}
+                        />
+                        <MdOutlineLightMode className="swap-on w-6 h-6 text-[#ffec99]" />
+                        <MdOutlineDarkMode className="swap-off w-6 h-6 text-secondary" />
+                    </label>
                     <div className="dropdown">
                         <label htmlFor='' tabIndex="0" className="btn btn-ghost lg:hidden text-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul
                             tabIndex="0"
-                            className="menu menu-compact dropdown-content mt-3 p-5 shadow w-72 right-6 bg-success rounded-xl"
+                            className="menu menu-compact dropdown-content mt-3 p-5 shadow w-72 right-6 bg-warning rounded-xl"
                         >
                             {navOptions}
                         </ul>

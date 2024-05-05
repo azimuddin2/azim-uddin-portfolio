@@ -7,7 +7,7 @@ const Main = () => {
         <div className="bg-neutral">
             <Navbar></Navbar>
             <Outlet></Outlet>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     );
 };
