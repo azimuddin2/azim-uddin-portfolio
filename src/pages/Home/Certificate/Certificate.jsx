@@ -15,15 +15,19 @@ const Certificate = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-8'>
                 <Slide direction='down'>
-                    <Link target={"_blank"} to="https://drive.google.com/file/d/1WIl8nPiFzrquIXAbsvoFtgaoTTV38Twx/view?usp=sharing" className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative">
+                    <Link
+                        target={"_blank"}
+                        to="https://drive.google.com/file/d/1WIl8nPiFzrquIXAbsvoFtgaoTTV38Twx/view?usp=sharing"
+                        className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative"
+                    >
                         <figure>
                             <img src={fpiCertificate} alt="FPI Certificate" className="rounded-xl" />
                         </figure>
                         <div className='card-body absolute top-0 bottom-0 flex justify-center items-center'>
                             <div className='group/edit invisible group-hover/item:visible'>
-                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-white' />
+                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-secondary' />
                                 <div className='flex items-center'>
-                                    <p className='text-center text-white text-base me-1'>Live Preview</p>
+                                    <p className='text-center text-secondary text-base me-1'>Live Preview</p>
                                     <FiExternalLink className='text-base' />
                                 </div>
                             </div>
@@ -31,15 +35,19 @@ const Certificate = () => {
                     </Link>
                 </Slide>
                 <Slide direction='up'>
-                    <Link target={"_blank"} to="https://drive.google.com/file/d/13rJTtAtqQ4UVjZwBZKLKW_pNbSTBJcK-/view?usp=sharing" className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative">
+                    <Link
+                        target={"_blank"}
+                        to="https://drive.google.com/file/d/13rJTtAtqQ4UVjZwBZKLKW_pNbSTBJcK-/view?usp=sharing"
+                        className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative"
+                    >
                         <figure>
                             <img src={programmingHeroCertificate} alt="Programming Hero Certificate" className="rounded-xl" />
                         </figure>
                         <div className='card-body absolute top-0 bottom-0 flex justify-center items-center'>
                             <div className='group/edit invisible group-hover/item:visible'>
-                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-white' />
+                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-secondary' />
                                 <div className='flex items-center'>
-                                    <p className='text-center text-white text-base me-1'>Live Preview</p>
+                                    <p className='text-center text-secondary text-base me-1'>Live Preview</p>
                                     <FiExternalLink className='text-base' />
                                 </div>
                             </div>
@@ -47,15 +55,19 @@ const Certificate = () => {
                     </Link>
                 </Slide>
                 <Slide direction='down'>
-                    <Link target={"_blank"} to="https://drive.google.com/file/d/1EHEZniJnXRO1AF1WUGw0znhCDJtf9dL7/view?usp=sharing" className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative">
+                    <Link
+                        target={"_blank"}
+                        to="https://drive.google.com/file/d/1EHEZniJnXRO1AF1WUGw0znhCDJtf9dL7/view?usp=sharing"
+                        className="group/item hover:card hover:bg-base-100 image-full cursor-pointer relative"
+                    >
                         <figure>
                             <img src={utcCertificate} alt="UTC Certificate" className="rounded-xl" />
                         </figure>
                         <div className='card-body absolute top-0 bottom-0 flex justify-center items-center'>
                             <div className='group/edit invisible group-hover/item:visible'>
-                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-white' />
+                                <HiOutlineViewfinderCircle className=' mx-auto text-4xl text-secondary' />
                                 <div className='flex items-center'>
-                                    <p className='text-center text-white text-base me-1'>Live Preview</p>
+                                    <p className='text-center text-secondary text-base me-1'>Live Preview</p>
                                     <FiExternalLink className='text-base' />
                                 </div>
                             </div>

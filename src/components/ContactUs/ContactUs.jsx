@@ -68,14 +68,14 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex-1 shadow p-5 lg:p-10 rounded-lg mt-5 lg:mt-0">
+                <div className="flex-1 bg-success shadow p-5 lg:p-10 rounded-lg mt-5 lg:mt-0">
                     <form onSubmit={handleSubmit}>
                         <div className="form-control mb-3">
                             <input
                                 name='name'
                                 type="text"
                                 placeholder="Enter Your Name"
-                                className="input input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                                className="input bg-neutral text-secondary border-info input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                                 required
                             />
                         </div>
@@ -84,14 +84,14 @@ const ContactUs = () => {
                                 name="email"
                                 type="email"
                                 placeholder="Enter Your Email"
-                                className="input input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                                className="input bg-neutral text-secondary border-info input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                                 required
                             />
                         </div>
                         <div className="form-control mb-3">
                             <select
                                 name="service"
-                                className="select select-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                                className="select bg-neutral text-secondary border-info select-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                             >
                                 <option disabled selected className="text-accent">Select Your Service</option>
                                 {
@@ -109,7 +109,7 @@ const ContactUs = () => {
                                 name="message"
                                 rows='4'
                                 placeholder="Write Your Message Here..."
-                                className="textarea input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                                className="textarea bg-neutral text-secondary border-info input-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                                 required
                             ></textarea>
                         </div>
