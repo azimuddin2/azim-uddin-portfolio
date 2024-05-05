@@ -30,6 +30,7 @@ const ProjectDetailsModal = ({ projectDetails, closeModal }) => {
                                 </div>)
                             }
                         </Carousel>
+                        <h2 className="text-xl capitalize text-secondary font-medium mb-1">About this web application</h2>
                         <p className="text-accent mb-6">{description}</p>
                         <h2 className="text-xl text-secondary font-medium mb-2">Technology Skills</h2>
                         <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 w-11/12 lg:w-4/5 mx-auto">

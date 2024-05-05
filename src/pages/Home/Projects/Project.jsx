@@ -12,7 +12,7 @@ const Project = ({ project, setProjectModal }) => {
     };
 
     return (
-        <div className="card shadow my-12 lg:my-16 m-1 lg:mx-0 cursor-default">
+        <div className="card shadow my-12 lg:my-16 m-1 lg:mx-0 cursor-default bg-success">
             <figure className="px-5 pt-5">
                 <img src={image} alt={name} className="rounded-xl" />
             </figure>

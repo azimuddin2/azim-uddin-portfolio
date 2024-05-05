@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer
             style={{ background: 'var(--Dark-07, #F3F3F3)' }}
-            className="pt-20 px-6 lg:px-0"
+            className="pt-20 px-6 lg:px-0 mt-12 lg:mt-16"
         >
             <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b'>
                 <div>
