@@ -6,7 +6,7 @@ import ScrollToTop from 'react-scroll-to-top';
 const Footer = () => {
     return (
         <footer className="pt-20 px-6 lg:px-0 mt-12 lg:mt-16 bg-warning">
-            <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b'>
+            <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b border-info'>
                 <div>
                     <h2 className='text-primary font-semibold text-lg'>AU Software Agency</h2>
                     <p className='my-3 text-accent text-sm'>Hello Guys! I am a Full Stack web <br /> developer. I have 4+ years of <br /> experience in web programming.</p>

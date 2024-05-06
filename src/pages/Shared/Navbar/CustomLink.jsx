@@ -11,7 +11,7 @@ const CustomLink = ({ children, to, ...props }) => {
                 color: match ? '#fff' : '',
                 fontWeight: match ? '600' : '500',
                 borderRadius: '4px',
-                marginRight: '4px',
+                marginRight: '5px',
                 fontSize: '15px'
             }}
             to={to}
