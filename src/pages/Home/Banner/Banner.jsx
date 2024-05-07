@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import azimImg from '../../../assets/images/azim_uddin.jpeg';
+import azimImg from '../../../assets/images/azim_uddin.png';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkSlash, FaLinkedinIn } from 'react-icons/fa6';
 import { SiUpwork } from 'react-icons/si';
@@ -13,11 +13,10 @@ const Banner = () => {
                         src={azimImg}
                         alt='azim uddin'
                         style={{ border: '3px solid #14a800' }}
-                        className="w-4/5 lg:w-3/5 rounded-xl mx-auto"
+                        className="w-5/6 lg:w-3/5 rounded-full mx-auto"
                     />
                 </div>
-
-                <div className='flex-1 mt-5 lg:mt-0'>
+                <div className='flex-1 mt-4 lg:mt-0'>
                     <h1 className="text-4xl lg:text-5xl text-secondary font-semibold mb-2 lg:mb-4">Hi! I'm Azim Uddin.</h1>
                     <TypeAnimation
                         className="text-3xl lg:text-4xl font-semibold text-primary"
