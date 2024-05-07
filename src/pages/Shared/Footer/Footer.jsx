@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const Footer = () => {
     return (
-        <footer className="pt-20 px-6 lg:px-0 mt-12 lg:mt-16 bg-warning">
+        <footer className="pt-12 lg:pt-20 px-6 lg:px-0 mt-12 lg:mt-16 bg-warning">
             <div className='footer max-w-screen-xl lg:mx-auto pb-8 border-b border-info'>
                 <div>
                     <h2 className='text-primary font-semibold text-lg'>AU Software Agency</h2>

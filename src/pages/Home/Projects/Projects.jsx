@@ -18,7 +18,7 @@ const Projects = () => {
     const { isLoading, error, data: projects = [] } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/projects');
+            const res = await fetch('https://azim-uddin-portfolio-server.vercel.app/projects');
             const data = await res.json();
             return data;
         }
@@ -37,7 +37,7 @@ const Projects = () => {
     }
 
     return (
-        <section className="my-6 lg:my-12">
+        <section className="max-w-screen-xl lg:mx-auto mx-5 my-6 lg:my-12">
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Projects</h2>
                 <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Here Are Some Recent Works</h1>

@@ -6,7 +6,7 @@ import { SiUpwork } from 'react-icons/si';
 
 const Banner = () => {
     return (
-        <section className="my-6 lg:my-12">
+        <section className="max-w-screen-xl lg:mx-auto mx-5 my-6 lg:my-12">
             <div className="hero-content p-0 flex-col lg:flex-row-reverse">
                 <div className='flex-1 mx-auto'>
                     <img

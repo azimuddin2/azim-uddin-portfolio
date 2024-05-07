@@ -55,8 +55,8 @@ const Navbar = () => {
     </>
 
     return (
-        <div className=' py-1 px-2 lg:px-0'>
-            <div className="navbar container mx-auto max-w-screen-xl">
+        <div className='py-1 px-2 lg:px-0'>
+            <div className="navbar lg:p-0 container mx-auto max-w-screen-xl">
                 <div className="navbar-start">
                     <Link to="/">
                         <h2 className='text-primary text-xl font-medium'>MD. AZIM UDDIN</h2>
