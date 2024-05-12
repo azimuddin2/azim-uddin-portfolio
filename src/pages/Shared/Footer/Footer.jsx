@@ -11,7 +11,7 @@ const Footer = () => {
                     <h2 className='text-primary font-semibold text-lg'>AU Software Agency</h2>
                     <p className='my-3 text-accent text-sm'>Hello Guys! I am a Full Stack web <br /> developer. I have 4+ years of <br /> experience in web programming.</p>
                     <Link to="/projects" className='group'>
-                        <button className='btn btn-outline btn-primary group-hover:text-white capitalize'>All Projects</button>
+                        <button className='btn btn-primary text-white capitalize'>All Projects</button>
                     </Link>
                     <ul className='flex items-center mt-5'>
                         <li>
