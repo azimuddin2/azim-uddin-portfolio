@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <div className="bg-neutral">
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <Outlet />
             <Footer></Footer>
         </div>
     );
