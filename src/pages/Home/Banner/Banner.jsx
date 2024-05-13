@@ -23,8 +23,6 @@ const Banner = () => {
                         sequence={[
                             'Full Stack Developer',
                             1000,
-                            'MERN Stack Developer',
-                            1000,
                             'Software Developer',
                             1000,
                             'Freelancer',

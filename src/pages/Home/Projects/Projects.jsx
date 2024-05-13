@@ -37,7 +37,7 @@ const Projects = () => {
     }
 
     return (
-        <section className="max-w-screen-xl lg:mx-auto mx-5 my-6 lg:my-12">
+        <section className="max-w-screen-xl lg:mx-auto mx-4 my-6 lg:my-12">
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Projects</h2>
                 <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Here Are Some Recent Works</h1>

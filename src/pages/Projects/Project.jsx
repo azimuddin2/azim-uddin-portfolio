@@ -12,11 +12,11 @@ const Project = ({ project, setProjectModal }) => {
     };
 
     return (
-        <div className="rounded-2xl shadow cursor-default bg-success">
+        <div className="rounded-xl shadow cursor-default bg-success">
             <figure className="px-5 pt-5">
                 <img src={image} alt={name} className="rounded-xl" />
             </figure>
-            <div className="card-body p-5 lg:p-8 pb-6 lg:pt-5">
+            <div className="card-body p-4 lg:p-8 pb-6 lg:pt-5">
                 <h2 className="card-title text-secondary">{name}</h2>
                 <div className="text-accent text-sm lg:text-base">
                     {isReadMore ? description.slice(0, 110) + '...' : description}
