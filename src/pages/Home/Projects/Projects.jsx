@@ -22,7 +22,9 @@ const Projects = () => {
             const data = await res.json();
             return data;
         }
-    })
+    });
+
+    const projectsCollection = projects.slice(0, 12);
 
     const closeModal = () => {
         setProjectModal(null);
@@ -91,7 +93,7 @@ const Projects = () => {
                     spaceBetween={0}
                 >
                     {
-                        projects.map(project => <SwiperSlide key={project._id}>
+                        projectsCollection?.map(project => <SwiperSlide key={project._id}>
                             <Project
                                 project={project}
                                 setProjectModal={setProjectModal}

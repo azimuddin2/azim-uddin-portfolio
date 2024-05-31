@@ -1,5 +1,5 @@
 import { FaLinkedinIn, FaGithub, FaFacebookF } from 'react-icons/fa';
-import { SiUpwork } from 'react-icons/si';
+import { SiFiverr, SiUpwork } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 
@@ -39,6 +39,15 @@ const Footer = () => {
                                 className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-2 preview-btn'
                             >
                                 <SiUpwork className='text-base' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                target={"_blank"}
+                                to={'https://www.fiverr.com/azimuddin2?up_rollout=true'}
+                                className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-3 preview-btn'
+                            >
+                                <SiFiverr className='text-xl' />
                             </Link>
                         </li>
                         <li>

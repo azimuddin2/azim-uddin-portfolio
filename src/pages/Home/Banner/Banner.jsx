@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import azimImg from '../../../assets/images/azim_uddin.png';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkSlash, FaLinkedinIn } from 'react-icons/fa6';
-import { SiUpwork } from 'react-icons/si';
+import { SiFiverr, SiUpwork } from 'react-icons/si';
 
 const Banner = () => {
     return (
@@ -65,8 +65,17 @@ const Banner = () => {
                             <li>
                                 <Link
                                     target={"_blank"}
+                                    to={'https://www.fiverr.com/azimuddin2?up_rollout=true'}
+                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-3 animate-bounce preview-btn'
+                                >
+                                    <SiFiverr className='text-xl' />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    target={"_blank"}
                                     to={'https://github.com/azimuddin2'}
-                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded animate-bounce preview-btn'
+                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded preview-btn animate-pulse'
                                 >
                                     <FaGithub className='text-base' />
                                 </Link>
