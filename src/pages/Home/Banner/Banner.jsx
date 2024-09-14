@@ -31,7 +31,7 @@ const Banner = () => {
                         speed={20}
                         repeat={Infinity}
                     />
-                    <p className="my-4 lg:my-5 text-accent text-base lg:w-11/12">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technical Skills:- HTML, CSS, SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6, React.js, React Router, Firebase, Node.js, Express.js, MongoDB Etc.</p>
+                    <p className="my-4 lg:my-5 text-accent text-base lg:w-11/12">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technology Skills:- HTML, CSS, SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6, React.js, React Router, Next.js, Redux, Firebase, Node.js, Express.js, MongoDB Etc.</p>
                     <div className='flex items-center justify-between lg:justify-normal'>
                         <button className="btn btn-primary text-white">
                             <Link
