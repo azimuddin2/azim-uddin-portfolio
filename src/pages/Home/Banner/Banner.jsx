@@ -36,7 +36,7 @@ const Banner = () => {
                         <button className="btn btn-primary text-white">
                             <Link
                                 target={"_blank"}
-                                to={'https://drive.google.com/file/d/1WIl8nPiFzrquIXAbsvoFtgaoTTV38Twx/view?usp=sharing'}
+                                to={'https://docs.google.com/document/d/1QZdmjL4LVAgY2xzflPjSPeD5XbUfz_3L32F7i4IucPM/edit?tab=t.0'}
                                 className='flex items-center'
                             >
                                 <span>Get Resume</span>
