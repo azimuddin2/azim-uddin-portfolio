@@ -64,7 +64,7 @@ const ContactUs = () => {
                         </p>
                         <p className="flex items-center text-accent">
                             <GrLocation className="text-lg text-primary mr-2" />
-                            <span>Feni-Bangladesh</span>
+                            <span>Dhaka-Bangladesh</span>
                         </p>
                     </div>
                 </div>

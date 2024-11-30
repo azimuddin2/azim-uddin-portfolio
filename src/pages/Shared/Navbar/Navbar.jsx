@@ -92,7 +92,7 @@ const Navbar = () => {
                         </label>
                         <ul
                             tabIndex="0"
-                            className="menu menu-compact dropdown-content mt-3 p-5 shadow w-72 right-6 bg-warning rounded-xl"
+                            className="menu menu-compact dropdown-content mt-3 p-5 shadow w-72 right-6 bg-warning rounded-xl z-10"
                         >
                             {navOptions}
                         </ul>
