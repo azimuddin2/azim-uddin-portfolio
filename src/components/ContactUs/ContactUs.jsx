@@ -93,7 +93,7 @@ const ContactUs = () => {
                                 name="service"
                                 className="select bg-neutral text-secondary border-info select-bordered rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                             >
-                                <option disabled selected className="text-accent">Select Your Service</option>
+                                <option disabled selected className="text-accent">Select Your Development Track</option>
                                 {
                                     services?.map(service => <option
                                         key={service._id}
