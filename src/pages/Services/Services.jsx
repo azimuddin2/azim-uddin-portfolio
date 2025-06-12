@@ -25,8 +25,8 @@ const Services = () => {
     return (
         <section className="max-w-screen-xl lg:mx-auto mx-5 lg:my-12 my-6">
             <div className="text-center">
-                <h2 className="text-lg lg:text-xl text-primary font-medium">My Services</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Provide Awesome Services</h1>
+                <h2 className="text-lg lg:text-xl text-primary font-medium">Development Track</h2>
+                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Crafting Solutions Through Code</h1>
             </div>
             <div className="mt-5 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
