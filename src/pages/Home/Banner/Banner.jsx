@@ -1,8 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import azimImg from '../../../assets/images/azim_uddin.png';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkSlash, FaLinkedinIn } from 'react-icons/fa6';
-import { SiFiverr, SiUpwork } from 'react-icons/si';
+import { FaGithub, FaLinkSlash, FaLinkedinIn, FaFacebookF } from 'react-icons/fa6';
 
 const Banner = () => {
     return (
@@ -25,13 +24,13 @@ const Banner = () => {
                             1000,
                             'Software Developer',
                             1000,
-                            'Freelancer',
+                            'MERN Stack Developer',
                             1000,
                         ]}
                         speed={20}
                         repeat={Infinity}
                     />
-                    <p className="my-4 lg:my-5 text-accent text-base lg:w-11/12">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technology Skills:- HTML, CSS, SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6, React.js, React Router, Next.js, Redux, Firebase, Node.js, Express.js, MongoDB Etc.</p>
+                    <p className="my-4 lg:my-5 text-accent text-base lg:w-11/12">Hello Guys! I am a Full Stack web developer. I have 4+ years of experience in web programming. My Technology Skills:- HTML, CSS, SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6, TypeScript, React.js, React Router, Next.js, Redux, Firebase, Node.js, Express.js, MongoDB, Mongoose Etc.</p>
                     <div className='flex items-center justify-between lg:justify-normal'>
                         <button className="btn btn-primary text-white">
                             <Link
@@ -47,8 +46,17 @@ const Banner = () => {
                             <li>
                                 <Link
                                     target={"_blank"}
-                                    to={'https://www.linkedin.com/in/mohammad-azim-uddin-232284241'}
-                                    className='btn btn-circle btn-outline btn-primary btn-sm rounded mr-3 animate-bounce preview-btn'
+                                    to={'https://www.facebook.com/au.pranto.5'}
+                                    className='btn btn-circle btn-outline btn-primary btn-sm rounded mr-2 preview-btn'
+                                >
+                                    <FaFacebookF className='text-base' />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    target={"_blank"}
+                                    to={'https://www.linkedin.com/in/md-azim-uddin-232284241'}
+                                    className='btn btn-circle btn-outline btn-primary btn-sm rounded mr-3 preview-btn'
                                 >
                                     <FaLinkedinIn className='text-base' />
                                 </Link>
@@ -56,26 +64,8 @@ const Banner = () => {
                             <li>
                                 <Link
                                     target={"_blank"}
-                                    to={'https://www.upwork.com/freelancers/~0199b09bb254ec0732'}
-                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-3 animate-pulse preview-btn'
-                                >
-                                    <SiUpwork className='text-base' />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    target={"_blank"}
-                                    to={'https://www.fiverr.com/azimuddin2?up_rollout=true'}
-                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded mr-3 animate-bounce preview-btn'
-                                >
-                                    <SiFiverr className='text-xl' />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    target={"_blank"}
                                     to={'https://github.com/azimuddin2'}
-                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded preview-btn animate-pulse'
+                                    className='btn btn-outline btn-circle btn-primary btn-sm rounded preview-btn'
                                 >
                                     <FaGithub className='text-base' />
                                 </Link>
