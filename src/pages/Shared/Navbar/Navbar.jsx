@@ -34,7 +34,7 @@ const Navbar = () => {
         </li>
         <li>
             <CustomLink to='/services'>
-                <MdOutlineDesignServices className='text-lg lg:hidden' /> Services
+                <MdOutlineDesignServices className='text-lg lg:hidden' /> DevTrack
             </CustomLink>
         </li>
         <li>
