@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 const Project = ({ project, setProjectModal }) => {
     const { image, name, description, link } = project;
@@ -30,14 +29,15 @@ const Project = ({ project, setProjectModal }) => {
                     </p>
                 </div>
                 <div className="card-actions flex justify-center items-center mt-2">
-                    <Link target={"_blank"} to={link}>
-                        <button
-                            className="btn btn-primary btn-sm rounded text-white"
-                        >
-                            Live Preview
-                            <FiExternalLink className='text-base' />
-                        </button>
-                    </Link>
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary btn-sm rounded text-white"
+                    >
+                        Live Preview
+                        <FiExternalLink className="text-base" />
+                    </a>
                     <label
                         onClick={() => setProjectModal(project)}
                         htmlFor="project-details-modal"
