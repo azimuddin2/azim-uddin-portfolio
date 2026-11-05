@@ -52,7 +52,7 @@ const Banner = () => {
                         />
                     </p>
 
-                    <p className="mt-4 text-accent text-base lg:w-11/12 leading-relaxed mb-5">
+                    <p className="mt-4 text-accent text-base lg:w-11/12 leading-relaxed mb-8">
                         Full Stack Developer with 2+ years of experience building complete
                         applications, from responsive user interfaces to secure APIs and database
                         design. I work with React.js, Next.js, Node.js, Express.js, TypeScript,

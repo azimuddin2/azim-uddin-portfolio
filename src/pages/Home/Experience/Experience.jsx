@@ -15,13 +15,13 @@ const experiences = [
         ],
         points: [
             'Built full stack apps with React, Next.js, Node.js, Express, and MongoDB/PostgreSQL, with JWT-secured REST APIs.',
-            'Delivered 5+ client projects from design to deployment on AWS using Docker and CI/CD.',
+            'Delivered 10+ client projects from design to deployment on AWS using Docker and CI/CD.',
             'Improved page load time by 40% by optimizing React components and API queries.',
             'Built a real-time chat feature (Socket.IO) used by 1,000+ users.',
         ],
     },
     {
-        role: 'Web Developer',
+        role: 'Web Developer & Instructor',
         company: 'Programming Hero',
         logo: programmingHeroLogo,
         period: 'Jan 2025 – Jun 2025',
