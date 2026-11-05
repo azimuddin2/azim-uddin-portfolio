@@ -13,7 +13,7 @@ const Services = () => {
     const { isLoading, error, data: services = [] } = useQuery({
         queryKey: ['services'],
         queryFn: async () => {
-            const res = await fetch('https://azim-uddin-portfolio-server.vercel.app/services');
+            const res = await fetch('../../../data/services.json');
             const data = await res.json();
             return data;
         }
@@ -36,7 +36,7 @@ const Services = () => {
             <div className="mt-5 lg:mt-8">
                 <Swiper
                     style={{
-                        "--swiper-pagination-color": "#14a800",
+                        "--swiper-pagination-color": "#15803D",
                         "--swiper-pagination-bullet-inactive-color": "#999999",
                         "--swiper-pagination-bullet-inactive-opacity": "1",
                         "--swiper-pagination-bullet-size": "12px",

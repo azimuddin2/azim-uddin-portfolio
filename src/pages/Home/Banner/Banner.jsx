@@ -27,7 +27,7 @@ const Banner = () => {
                         width={480}
                         height={480}
                         fetchpriority="high"
-                        style={{ border: '3px solid #14a800' }}
+                        style={{ border: '3px solid #15803D' }}
                         className="w-5/6 lg:w-3/5 aspect-square object-cover rounded-full mx-auto"
                     />
                 </div>
@@ -66,7 +66,7 @@ const Banner = () => {
                             href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-primary text-white h-10 min-h-0"
+                            className="btn btn-primary text-white h-10 min-h-0 rounded-md"
                         >
                             <span>View Resume</span>
                             <FaArrowUpRightFromSquare className="text-sm ms-1" aria-hidden="true" />

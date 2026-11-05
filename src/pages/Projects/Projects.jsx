@@ -11,7 +11,7 @@ const Projects = () => {
     const { isLoading, error, data: projects = [] } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const res = await fetch('https://azim-uddin-portfolio-server.vercel.app/projects');
+            const res = await fetch('../../../data/projects.json');
             const data = await res.json();
             return data;
         }

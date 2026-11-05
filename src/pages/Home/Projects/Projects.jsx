@@ -18,13 +18,13 @@ const Projects = () => {
     const { isLoading, error, data: projects = [] } = useQuery({
         queryKey: ['projects'],
         queryFn: async () => {
-            const res = await fetch('https://azim-uddin-portfolio-server.vercel.app/projects');
+            const res = await fetch('../../../data/projects.json');
             const data = await res.json();
             return data;
         }
     });
 
-    const projectsCollection = projects.slice(0, 12);
+    const projectsCollection = projects.slice(0, 8);
 
     const closeModal = () => {
         setProjectModal(null);
@@ -47,7 +47,7 @@ const Projects = () => {
             <div>
                 <Swiper
                     style={{
-                        "--swiper-pagination-color": "#14a800",
+                        "--swiper-pagination-color": "#15803D",
                         "--swiper-pagination-bullet-inactive-color": "#999999",
                         "--swiper-pagination-bullet-inactive-opacity": "1",
                         "--swiper-pagination-bullet-size": "12px",

@@ -13,7 +13,7 @@ export default {
     themes: [
       {
         light: {
-          primary: "#14a800",
+          primary: "#15803D",
           secondary: "#181818",
           accent: "#676767",
           neutral: "#ffffff",
@@ -24,7 +24,7 @@ export default {
       },
       {
         dark: {
-          primary: "#14a800",
+          primary: "#15803D",
           secondary: "#e2e8f0",
           accent: "#a6adbb",
           neutral: "#0f172a",
