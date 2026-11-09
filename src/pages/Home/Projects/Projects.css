@@ -22,6 +22,25 @@
     color: white !important;
 }
 
+.mySwiper .swiper-slide {
+    padding: 4px;
+    height: auto;
+}
+
+.swiper-scrollbar-drag {
+    background-color: #15803D !important;
+    border-radius: 10px;
+}
+
+.mySwiper .swiper-scrollbar {
+    height: 6px;
+    bottom: 10px;
+    left: 24px;
+    width: calc(100% - 48px);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 /* responsive tablet device */
 @media screen and (min-width: 577px) and (max-width: 991px) {
     .swiper-button-prev {
