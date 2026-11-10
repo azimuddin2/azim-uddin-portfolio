@@ -48,7 +48,7 @@ const ContactUs = () => {
         <section className="max-w-screen-xl lg:mx-auto mx-5 my-8 lg:my-12">
             <div className="text-center mb-5 lg:mb-8">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">Contact Us</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium text-secondary capitalize">Stay connected with us</h1>
+                <h1 className="text-xl lg:text-3xl font-medium text-secondary">Stay connected with us</h1>
             </div>
             <div className="lg:flex justify-between items-center">
                 <div className="flex-1">

@@ -10,7 +10,7 @@ const Certificate = () => {
         <section className='max-w-screen-xl lg:mx-auto mx-5 my-8 lg:my-12'>
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Certificate</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Certificate Of Achievement</h1>
+                <h1 className="text-xl lg:text-3xl font-medium text-secondary">Certificate Of Achievement</h1>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-8'>
                 <Link

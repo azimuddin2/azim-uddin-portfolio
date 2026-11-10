@@ -16,7 +16,7 @@ const Project = ({ project, setProjectModal }) => {
                 <img src={image} alt={name} className="rounded-xl" />
             </figure>
             <div className="card-body p-4 lg:p-8 pb-6 lg:pt-5">
-                <h2 className="card-title text-secondary">{name}</h2>
+                <h2 className="card-title lg:text-xl text-base text-secondary">{name}</h2>
                 <div className="text-accent text-sm lg:text-base">
                     {isReadMore ? description.slice(0, 110) + '...' : description}
                     <p onClick={toggleReadMore} className='inline'>

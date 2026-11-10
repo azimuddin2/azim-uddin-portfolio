@@ -1,6 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import azimImg from '../../../assets/images/azim_uddin.jpeg';
+import './Banner.css';
 
 const RESUME_URL =
     'https://docs.google.com/document/d/1r86U0EQGsyzWUA6pibKo8rWuNuYQXYBws8ellV_B72A/edit?tab=t.0#heading=h.w1au8dqm7yb1';
@@ -17,23 +18,27 @@ const socialLinks = [
 
 const Banner = () => {
     return (
-        <section className="max-w-screen-xl lg:mx-auto mx-5 my-6 lg:my-12">
+        <section className="max-w-screen-xl lg:mx-auto mx-4 my-6 lg:my-12">
             <div className="hero-content p-0 flex-col lg:flex-row-reverse gap-8 lg:gap-12">
                 {/* Profile image */}
-                <div className="flex-1 mx-auto">
-                    <img
-                        src={azimImg}
-                        alt="Portrait of Azim Uddin"
-                        width={480}
-                        height={480}
-                        fetchpriority="high"
-                        style={{ border: '3px solid #15803D' }}
-                        className="w-5/6 lg:w-3/5 aspect-square object-cover rounded-full mx-auto"
-                    />
+                <div className="flex-1 mx-auto motion-safe:animate-[fadeScale_0.8s_ease-out_both]">
+                    <div className="w-5/6 lg:w-3/5 mx-auto motion-safe:animate-[float_5s_ease-in-out_infinite]">
+                        <img
+                            src={azimImg}
+                            alt="Portrait of Azim Uddin"
+                            width={480}
+                            height={480}
+                            fetchPriority="high"
+                            style={{ border: '3px solid #15803D' }}
+                            className="w-full aspect-square object-cover rounded-full
+                 motion-safe:animate-[pulseRing_2.5s_ease-out_infinite]
+                 transition-transform duration-500 hover:scale-105"
+                        />
+                    </div>
                 </div>
 
                 {/* Intro */}
-                <div className="flex-1 mt-4 lg:mt-0">
+                <div className="flex-1">
                     <h1 className="text-4xl lg:text-5xl text-secondary font-semibold mb-2 lg:mb-4">
                         Hi, I&apos;m Azim Uddin.
                     </h1>
@@ -59,7 +64,7 @@ const Banner = () => {
                         MongoDB, and PostgreSQL. I focus on clean, maintainable code and on delivering reliable products
                         from idea to deployment.
                     </p>
-              
+
 
                     <div className="flex items-center justify-between lg:justify-start lg:gap-10">
                         <a
