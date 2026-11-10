@@ -110,7 +110,7 @@ const Skills = () => {
         <section className="max-w-screen-xl lg:mx-auto mx-5 my-6 lg:my-12">
             <div className="text-center">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Skills</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">
+                <h1 className="text-xl lg:text-3xl font-medium text-secondary">
                     Technology Skills &amp; Tools
                 </h1>
                 <p className="mt-3 mx-auto max-w-2xl text-base text-accent">

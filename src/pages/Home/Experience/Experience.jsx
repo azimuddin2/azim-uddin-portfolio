@@ -33,7 +33,7 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <section className="max-w-screen-xl lg:mx-auto mx-5 my-12 mb-6 lg:mb-0">
+        <section className="max-w-screen-xl lg:mx-auto mx-4 my-12 mb-6 lg:mb-0">
             <div className="text-left">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">Job Experience</h2>
                 <h1 className="text-2xl lg:text-3xl font-medium text-secondary">
@@ -57,7 +57,7 @@ const Experience = () => {
                             <span className="h-2 w-2 rounded-full bg-primary" />
                         </span>
 
-                        <article className="rounded-xl border border-info bg-success p-5 transition-colors hover:border-primary lg:p-8">
+                        <article className="rounded-xl border border-info bg-success p-3 transition-colors hover:border-primary lg:p-8">
                             {/* Header */}
                             <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                                 <div className="flex items-center gap-4">
@@ -78,7 +78,7 @@ const Experience = () => {
                                         </div>
                                     )}
                                     <div>
-                                        <h3 className="text-lg font-semibold leading-6 text-secondary">{role}</h3>
+                                        <h3 className="lg:text-lg text-base font-semibold leading-6 text-secondary">{role}</h3>
                                         <p className="font-medium text-primary">{company}</p>
                                     </div>
                                 </div>

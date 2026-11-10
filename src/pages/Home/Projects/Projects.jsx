@@ -31,10 +31,10 @@ const Projects = () => {
     if (error) return <ErrorMessage message={error.message} />;
 
     return (
-        <section className="max-w-screen-xl lg:mx-auto mx-4 my-6 lg:mt-12">
-            <div className="text-center">
+        <section className="max-w-screen-xl lg:mx-auto mx-3 my-6 lg:mt-12">
+            <div className="text-center mb-2 lg:mb-0">
                 <h2 className="text-lg lg:text-xl text-primary font-medium">My Projects</h2>
-                <h1 className="text-2xl lg:text-3xl font-medium text-secondary">Here Are Some Recent Works</h1>
+                <h1 className="text-xl lg:text-3xl font-medium text-secondary">Here Are Some Recent Works</h1>
             </div>
             <div>
                 <Swiper
